@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap');
 *,
 *::after,
 *::before {
@@ -6,4 +7,6 @@
 
 body {
  margin: 0;
+ font-family: 'Rubik', sans-serif;
+ background-image: url('./img/food.png');
 }
