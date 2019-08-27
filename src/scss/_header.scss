@@ -1,0 +1,55 @@
+.header {
+ display: flex;
+ padding: $gutter;
+ align-items: center;
+ background-color: $white;
+}
+
+.select,
+.filter {
+ color: $secondary;
+ font-weight: 700;
+ font-size: 1.6rem;
+}
+
+.select {
+ cursor: pointer;
+ border: none;
+ outline: none;
+ appearance: none;
+ padding: 1rem;
+ border-radius: 0.4rem;
+ margin-right: 6rem;
+ border: 2px solid $secondary;
+}
+
+.filter {
+ display: flex;
+ height: 3.5rem;
+ border-radius: 0.4rem;
+ line-height: 3.5rem;
+ text-align: center;
+
+ &__label {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  width: 10rem;
+ }
+
+ &__text {
+  margin: 0;
+  border-bottom: 2px solid transparent;
+  transition: all .3s ease;
+ }
+
+ &__radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  &:checked + .filter__text{
+   border-bottom-color: $secondary;
+  }
+ }
+}
