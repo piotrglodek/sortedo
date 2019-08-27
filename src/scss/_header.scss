@@ -3,6 +3,9 @@
  padding: $gutter;
  align-items: center;
  background-color: $white;
+ @media screen and (max-width: 800px) {
+  flex-direction: column;
+ }
 }
 
 .select,
@@ -19,8 +22,8 @@
  appearance: none;
  padding: 1rem;
  border-radius: 0.4rem;
- margin-right: 6rem;
  border: 2px solid $secondary;
+ margin-right: auto;
 }
 
 .filter {
@@ -29,18 +32,23 @@
  border-radius: 0.4rem;
  line-height: 3.5rem;
  text-align: center;
+ @media screen and (max-width: 800px) {
+  margin-top: $gutter;
+  width: 100%;
+  overflow-x: scroll;
+ }
 
  &__label {
   display: block;
   cursor: pointer;
   position: relative;
-  width: 10rem;
  }
 
  &__text {
+  padding: 0 4rem;
   margin: 0;
   border-bottom: 2px solid transparent;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
  }
 
  &__radio {
@@ -48,7 +56,7 @@
   top: 0;
   left: 0;
   opacity: 0;
-  &:checked + .filter__text{
+  &:checked + .filter__text {
    border-bottom-color: $secondary;
   }
  }
