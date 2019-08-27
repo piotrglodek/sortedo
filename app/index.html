@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>Document</title>
- <link rel="stylesheet" href="index.css">
-</head>
-<body>
- <script src="index.js"></script>
-</body>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css" />
+ </head>
+ <body>
+  <header class="header">
+   <select class="select">
+    <option value="default" selected disabled>Sort by</option>
+    <option value="az">Name: A-Z</option>
+    <option value="za">Name: Z-A</option>
+   </select>
+   <div class="filter">
+    <label for="filter__radio-0" class="filter__label">
+     <input
+      value="all"
+      type="radio"
+      name="filter-category"
+      id="filter__radio-0"
+      class="filter__radio"
+     />
+     <p class="filter__text">All</p>
+    </label>
+    <label for="filter__radio-1" class="filter__label">
+     <input
+      value="fruit"
+      type="radio"
+      name="filter-category"
+      id="filter__radio-1"
+      class="filter__radio"
+     />
+     <p class="filter__text">Fruit</p>
+    </label>
+    <label for="filter__radio-2" class="filter__label">
+     <input
+      value="grains"
+      type="radio"
+      name="filter-category"
+      id="filter__radio-2"
+      class="filter__radio"
+     />
+     <p class="filter__text">Grains</p>
+    </label>
+    <label for="filter__radio-3" class="filter__label">
+     <input
+      value="meat"
+      type="radio"
+      name="filter-category"
+      id="filter__radio-3"
+      class="filter__radio"
+     />
+     <p class="filter__text">Meat</p>
+    </label>
+    <label for="filter__radio-4" class="filter__label">
+     <input
+      value="vegetable"
+      type="radio"
+      name="filter-category"
+      id="filter__radio-4"
+      class="filter__radio"
+     />
+     <p class="filter__text">Vegetable</p>
+    </label>
+    <label for="filter__radio-5" class="filter__label">
+     <input
+      value="dairy"
+      type="radio"
+      name="filter-category"
+      id="filter__radio-5"
+      class="filter__radio"
+     />
+     <p class="filter__text">Dairy</p>
+    </label>
+   </div>
+  </header>
+  <div class="products"></div>
+  <script src="./data.js"></script>
+  <script src="index.js"></script>
+ </body>
 </html>
